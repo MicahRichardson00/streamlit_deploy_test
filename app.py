@@ -18,6 +18,7 @@ selected_y_var = st.selectbox(
 
 penguin_file = st.file_uploader("Select Your Local Penguins CSV")
 
+@st.cache_data()
 def load_file(penguin_file):
     time.sleep(5)
     if penguin_file is not None:
